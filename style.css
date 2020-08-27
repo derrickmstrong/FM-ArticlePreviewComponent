@@ -1,0 +1,137 @@
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+  font-size: 13px;
+  background: var(--LightGrayishBlue);
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  margin-top: 12rem;
+  /* background: #fff; */
+  width: 795px;
+  height: auto;
+  grid-template-areas:
+    'hero hero text text'
+    'hero hero text text'
+    'hero hero icon social';
+}
+
+.container > div {
+  margin: 0;
+}
+
+.hero {
+  grid-area: hero;
+  background-image: url('./images/drawers.jpg');
+  width: 275px;
+  background-size: cover;
+}
+
+.text {
+  background: #fff;
+  grid-area: text;
+  padding: 20px 25px 10px 55px;
+}
+
+.icon {
+  grid-area: icon;
+  background: #fff;
+  width: 100%;
+  padding: 5px 35px 20px 45px;
+  font-size: 1em;
+}
+
+.date {
+  color: var(--GrayishBlue);
+}
+
+.social {
+  grid-area: social;
+  background: #fff;
+  width: 100%;
+  padding: 15px 5px 0 5px;
+  justify-content: center;
+  align-items: start;
+  display: grid;
+}
+
+.avatar {
+  width: 20%;
+  margin-right: 15px;
+}
+
+.title {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+.copy {
+  font-size: 1.12em;
+  margin-top: -10px;
+  color: var(--VeryDarkGrayishBlue);
+}
+
+.share {
+  padding: 10px;
+  background-color: var(--LightGrayishBlue); */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    margin-top: 6rem;
+    background-color: transparent;
+    max-width: 400px;
+    grid-template-areas:
+      'hero hero'
+      'text text'
+      'icon social';
+  }
+
+  .hero {
+    width: 400px;
+    height: 300px;
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .text {
+    padding: 30px 55px 10px 55px;
+    font-size: 0.75rem;
+  }
+
+  .copy {
+    font-size: 1.25em;
+    padding-top: 15px;
+    color: var(--VeryDarkGrayishBlue);
+  }
+  .icon {
+    grid-area: icon;
+    background: #fff;
+    padding: 25px;
+    width: 100%;
+    padding: 5px 0px 25px 55px;
+    font-size: 1em;
+  }
+  .social {
+    padding: 5px 55px 25px 55px;
+  }
+}
