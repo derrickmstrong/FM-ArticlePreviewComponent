@@ -58,7 +58,7 @@ body {
 }
 
 .social-mobile {
-  display: none;
+  display: grid;
   background: hsl(217, 19%, 35%);
   color: hsl(212, 23%, 69%);
   letter-spacing: 3px;
